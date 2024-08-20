@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 19, 2024, 11:06:09 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+     <class name="EngeeringDTO" table="st_eng">
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="amount" type="int">
+            <column name="AMOUNT" />
+        </property>
+        <property name="post" type="java.lang.String">
+            <column name="POST" />
+        </property>
+        <property name="branch" type="java.lang.String">
+            <column name="BRANCH" />
+        </property>
+    </class>
+</hibernate-mapping>
